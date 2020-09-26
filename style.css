@@ -1,0 +1,117 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #333333;
+    /* --bg-primary: #23232e; */
+    --bg-secondary:#141418;
+    --transition-speed: 500ms;
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background:#1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+main {
+    margin-left: 5rem;
+    padding: 1rem
+
+}
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 200ms ease;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction:column;
+    /* align-items: center; makes sure icons stay in same position when nav-bar is hovered over*/
+    height: 100%;
+}
+
+.nav-item {
+    width: 100;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    transition: var(--transition-speed);
+}
+
+.link-text {
+    display:none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover {
+    width: 12rem;
+    /* background: var(--bg-secondary); */
+    /* color: var(--text-secondary); */
+}
+
+.navbar:hover .link-text {
+    display: inline;    
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color:var(--text-secondary);
+    /* background: var(--bg-secondary); too dark */
+    font-size: 0.8rem;
+    text-transform: uppercase; 
+    letter-spacing: 0.2ch;
+    width: 100%;
+}
+
+/* .logo-text{
+    display: inline;
+    position: absolute;
+    left: -9px;
+    transition: var(--transition-speed);
+} */
+
+/* Rotate logo */
+.logo svg {
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+}
+.navbar:hover .logo svg {
+    transform: rotate(-360deg);
+}
