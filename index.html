@@ -17,7 +17,6 @@
 
             <li class="top-nav-item">
                 <a href="#" class="top-nav-link">
-
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                         <path d="M0 0h24v24H0V0z" fill="none" />
                         <path
@@ -134,20 +133,20 @@
             </li>
 
 
-            <li id = "Inventory" class="nav-item">
-                <a href="#" class="nav-link">
+            <li class="nav-item">
+                <a data-tab-target="#Inventory" href="#" class="nav-link">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                         <path d="M0 0h24v24H0V0z" fill="none" />
                         <path
-                            d="M9.17 6l2 2H20v10H4V6h5.17M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z" /> 
+                            d="M9.17 6l2 2H20v10H4V6h5.17M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z" />
                     </svg>
                     <span class="link-text">Inventory</span>
                 </a>
             </li>
 
 
-            <li id = "Wishlist" class="nav-item">
-                <a href="#" class="nav-link">
+            <li class="nav-item">
+                <a data-tab-target="#Wishlist" href="#" class="nav-link">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                         <path d="M0 0h24v24H0V0z" fill="none" />
                         <path
@@ -158,8 +157,8 @@
             </li>
 
 
-            <li id = "Restore" class="nav-item">
-                <a href="#" class="nav-link">
+            <li class="nav-item">
+                <a data-tab-target="#Restore" href="#" class="nav-link">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                         <path d="M0 0h24v24H0V0z" fill="none" />
                         <path
@@ -169,8 +168,8 @@
                 </a>
             </li>
 
-            <li id = "Dark Mode" class="nav-item">
-                <a href="#" class="nav-link">
+            <li class="nav-item">
+                <a id="Dark Mode" href="#" class="nav-link">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                         <path d="M0 0h24v24H0V0z" fill="none" />
                         <path
@@ -183,7 +182,30 @@
     </nav>
 
     <main>
-        <h1>Hello Web!</h1>
+        <div class="tab-content">
+            <div id="Inventory" data-tab-content>
+                <h2>Inventory</h2>
+                <p>London is the capital city of England.</p>
+                <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million
+                    inhabitants.</p>
+            </div>
+
+            <div id="Wishlist" data-tab-content>
+                <h2>Wishlist</h2>
+                <p>Paris is the capital of France.</p>
+                <p>The Paris area is one of the largest population centers in Europe, with more than 12 million
+                    inhabitants.</p>
+            </div>
+
+            <div id="Restore" data-tab-content>
+                <h2>Restore</h2>
+                <p>Tokyo is the capital of Japan.</p>
+                <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+            </div>
+
+        </div>
+
+        <!-- <h1>Hello Web!</h1>
         <p>"On the other hand, we denounce with righteous indignation and dislike
             men who are so beguiled and demoralized by the charms of pleasure
             of the moment, so blinded by desire, that they cannot foresee the pain
@@ -297,10 +319,12 @@
             varius, ultrices nunc sed, facilisis ligula. Duis vitae justo sed felis volutpat fringilla. Quisque diam
             massa, malesuada interdum commodo in, molestie sed leo. Maecenas fringilla, nisi in convallis imperdiet,
             magna nibh tincidunt felis, eu fringilla purus orci nec orci. In imperdiet molestie iaculis.
-        </p>
+        </p> -->
 
-        <!-- </main>
-    <div class="nav-container">
+    </main>
+
+
+    <!-- <div class="nav-container">
         <div class="wrapper">
             <nav>
                 <div class="logo">
@@ -330,12 +354,12 @@
         </div>
     </div> -->
 
-        <script>
-            document.write("Working!");
-        </script>
+    <script>
+        document.write("Working!");
+    </script>
 
 
-        <script src="./index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

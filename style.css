@@ -9,6 +9,14 @@
     --transition-speed: 500ms;
 }
 
+.light {
+
+}
+
+.dark {
+
+}
+
 body {
     color: black;
     background-color: white;
@@ -165,4 +173,12 @@ main {
 }
 .navbar:hover .logo svg {
     transform: rotate(360deg);
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
 }
